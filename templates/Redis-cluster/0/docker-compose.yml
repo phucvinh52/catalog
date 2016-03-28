@@ -1,12 +1,12 @@
 master-config:
-  image: 192.168.99.1:5000/kiemsi/redis-replicas:v1
+  image: 10.40.31.143:5000/kiemsi/redis-replicas
   command: master-config
   labels:
     io.rancher.container.start_once: true
     io.rancher.container.pull_image: always
 master:
   restart: always
-  image: 192.168.99.1:5000/kiemsi/redis-replicas:v1
+  image: 10.40.31.143:5000/kiemsi/redis-replicas
   labels:
     io.rancher.container.hostname_override: container_name
     io.rancher.sidekicks: master-config
@@ -17,14 +17,14 @@ master:
 
 
 slave-config:
-  image: 192.168.99.1:5000/kiemsi/redis-replicas:v1
+  image: 10.40.31.143:5000/kiemsi/redis-replicas
   command: slave-config
   labels:
     io.rancher.container.start_once: true
     io.rancher.container.pull_image: always
 slave:
   restart: always
-  image: 192.168.99.1:5000/kiemsi/redis-replicas:v1
+  image: 10.40.31.143:5000/kiemsi/redis-replicas
   command: slave
   labels:
     io.rancher.container.hostname_override: container_name
