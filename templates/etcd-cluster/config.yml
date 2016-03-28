@@ -1,5 +1,5 @@
-name: Redis
+name: ETCD
 description: |
-  Redis cluster
+  Etcd cluster
 version: v1
 category: Cluster
