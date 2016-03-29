@@ -3,6 +3,12 @@
   version: "v1"
   description: "Redis: deploy redis cluster, pressing button plus into service slave to scaling this cluster redis"
   questions:
+    - variable: "slave_can_write"
+      label: "Slave can write in cluster"
+      description: "not recomment using value: true"
+      required: true
+      default: false
+      type: "boolean"
     - variable: "master_redis_config"
       description: |
         Cấu hình của master
