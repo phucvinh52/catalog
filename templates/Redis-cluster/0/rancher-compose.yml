@@ -40,5 +40,3 @@ slave:
     redis:
       slave: |
         ${slave_redis_config}
-      writeable: |
-        ${slave_can_write}

@@ -22,6 +22,8 @@ slave-config:
   labels:
     io.rancher.container.start_once: true
     io.rancher.container.pull_image: always
+  environment:
+    SLAVE_WRITEABLE: ${slave_can_write}
 slave:
   restart: always
   image: 10.40.31.143:5000/kiemsi/redis-replicas
