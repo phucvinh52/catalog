@@ -1,5 +1,5 @@
 name: Redis
 description: |
-  Redis cluster
+  Redis replicas
 version: v1
-category: Cluster
+category: Replicas

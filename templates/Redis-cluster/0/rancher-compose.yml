@@ -1,7 +1,7 @@
 .catalog:
-  name: "Redis cluster"
+  name: "Redis Replicas"
   version: "v1"
-  description: "Redis: deploy redis cluster, pressing button plus into service slave to scaling this cluster redis"
+  description: "Redis: deploy redis Replicas, pressing button plus into service slave to scaling this Replicas redis"
   questions:
     - variable: "slave_can_write"
       label: "Slave can write in cluster"
