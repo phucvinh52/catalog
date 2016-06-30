@@ -4,10 +4,10 @@ redis-sentinel:
   links:
     - redis-master:master
 redis-master:
-  image: caas.vinadata.vn:5000/demo/redis-master:v4
+  image: caas.vinadata.vn:5000/demo/redis-master:v5
   restart: always
 redis-slave:
-  image: caas.vinadata.vn:5000/demo/redis-slave:v4
+  image: caas.vinadata.vn:5000/demo/redis-slave:v5
   restart: always
   links:
     - redis-master:master
