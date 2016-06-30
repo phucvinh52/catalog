@@ -1,0 +1,5 @@
+name: Redis
+description: |
+  Redis sentinel 
+version: v1
+category: Replicas

@@ -1,0 +1,6 @@
+.catalog:
+  name: "Redis sentinel"
+  version: "v1"
+  description: "Redis: deploy redis sentinel"
+slave:
+  scale: 2
